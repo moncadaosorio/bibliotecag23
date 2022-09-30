@@ -36,12 +36,103 @@
     <!--formulario-->
 
     <main style="background-color:aquamarine">
+        <br /> <!--inserta un salto de pagina-->
+
+        <!--Creando un formulario-->
         <center>
             <h1>titulo de formulario</h1>
-            <p>aqui va un parrafo de prueba</p>
-            <p>aqui va un parrafo de prueba</p>
-            <p>aqui va un parrafo de prueba</p>
+            <form id="formulariog23"> <!--debemos darle un nombre osea un id al formulario-->
+            
+                <label for="nombres">Ingresar Nombres</label>
+                <input type="text" placeholder="ingrese nombres" id="nombres" size="30" minlength="5"  required> <!--debemos darle un id al campo,required quiere decir que es obligatorio ingresar un valor -->      
+                <br /><br />
+
+                <label for="año">Ingresar Año</label>
+                <input type="number" placeholder="ingresar año" size="60" id="año" required="true"
+                min="1900" max="2022">
+                <br /><br />
+
+                <label for="fecha">Ingresar Fecha</label><!--for es para que al tocar el label nos lleve al input-->
+                <input type="date"  id="fecha"  required="true">
+                <br /><br />
+
+                <label for="clave">Ingresar Clave</label>
+                <input type="password"  id="clave">
+                <br /><br />
+
+                <label for="tipo_documento">Ingresar Tipo de Documento</label>
+                <select id="tipo_documento">
+
+                    <option value="CC" selected>Cedula de Ciudadania</option><!--al escribirle selected me selecciona automaticamente la cedula -->
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cedula de Extranjeria</option>
+
+                </select>                
+
+                <br /><br /> 
+                <label for="observaciones">Ingresar Observaciones</label>
+                <textarea id="observaciones" autocomplete="on" cols="30" rows="10" minlength="10">ingrese observaciones</textarea>
+
+                <br /><br />
+                <label for="genero">Ingresar Genero</label>
+                <label>Masculino</label> <input type="radio" name="genero">
+                <label>Femenino</label> <input type="radio" name="genero">
+                <!--al ponerle type=radio y el mismo name osea genero me permite que cuando seleccione uno desactive el otro automaticamente-->
+
+                <br /><br />
+                <label>Seleccionar Materias</label>
+                <label>Matematicas</label> <input type="checkbox" name="materias">
+                <label>Fisica</label> <input type="checkbox" name="materias">
+                <label>Español</label> <input type="checkbox" name="materias">
+
+
+                <br /><br />           
+                <input type="submit" id="boton" size="60" value="Guardar">
+
+            </form>
+
         </center>
+
+    <center>
+            
+            <p>aqui va un parrafo de prueba</p>
+            <p>aqui va un parrafo de prueba</p>
+            <p>aqui va un parrafo de prueba</p>
+        
+
+    <!--Crear Tabla-->
+    <h1>Ejemplo Tabla</h1>
+
+    </center>
+    <Table align="center" bgcolor="#800080" border="1" width="50%">
+        <tr>
+            <th></th>
+            <th>lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+
+        <tr>
+            <td>8-10</td>
+            <td>Fisica</td>
+            <td>Matematicas</td>
+            <td>Español</td>
+            <td>Sociales</td>
+            <td>Quimica</td>
+        </tr>
+        
+
+
+
+
+
+
+
+    </Table>
+
+
         
     </main>
     <!--informacion del proyecto,grupo,redes sociales,etc..-->
