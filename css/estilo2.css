@@ -1,0 +1,237 @@
+/*Aca se pueden modificar la letra de todo el body */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+label{
+    width: 200px;
+    display: inline-block;/*Cuando creamos un label y necesitamos un cuadro de texto al lado debemos poner display: inline-block */
+    
+}
+
+
+/*Aca se pueden modificar los estilos tanto del head,como del body y del footer */
+/*Las jerarquias al modificar las propiedades simpre van primero lo que esta en la etiqueta, sino ..*/  
+/*... la ultima modificacion en el head,el body o el footer*/
+
+/*creemos un estilo nuevo llamado estilo1 para la primera caja con "." osea ".estilo1" cuando es class en el div*/
+/*...cuando es id en el div se hace con # osea #caja1*/
+
+
+/*Este estilo1 no me esta haciendo nada en la pagina porque lo deshabilite en el body del ejercicio 2*/
+.estilo1{
+    width: 300px;
+    height: 200px;
+    background-color:rgb(226, 43, 43);
+}
+/*Esta caja1 no me esta haciendo nada en la pagina porque la deshabilite en el body del ejercicio 2*/
+#caja1{
+    width: 300px;
+    height: 200px;
+    background-color:rgb(43, 141, 226);
+}
+
+.caja-header{
+    width: 100%;
+    height: 200px;
+    /*background-color:deepskyblue;*/
+}
+
+#caja-logo{
+    width: 50%;
+    height: 150px;
+    /*background-color:coral;*/
+    float: left;
+    position: relative;
+}
+/*centremos la imagen de la caja logo despues de poner "position: relative"*/
+#caja-logo img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+
+#caja-titulo{
+    width: 50%;
+    height: 150px;
+    /*background-color:crimson;*/
+    float: left;
+    text-align:left;
+}
+
+/*centremos el texto de la caja titulo despues de poner "text-align: center"*/
+#caja-titulo h1{
+    line-height: 100px;
+}
+
+#caja-menu{
+    width: 50%;
+    height: 50px;
+    /*background-color:rgba(122, 204, 50, 0.96);*/
+    float: left;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/*pongamos en forma horizontal el menu*/
+ul li{
+    display:inline-block;
+    width: 20%;
+    background-color:coral;
+}
+ul li a{
+    color: blue;
+    text-decoration: none;
+}
+
+#menu2{
+    color:white;
+}
+
+ul li a:hover{ /*El hover es para que tenga un comportamiento diferente el boton cuando yo me pare encima de el*/
+    color: black;
+    text-decoration:overline;
+    font-size: 18px;
+}
+ 
+form{
+    width: 50%;
+    background-color:white;
+    text-align: left;
+}
+
+.label1{
+    width: 16%;
+}
+
+.imput-form{
+        width: 60%;
+}
+
+.boton-formulario{
+    width: 46%;
+    text-align:center;
+    height: 30px;
+    background-color:blueviolet;
+    color:aqua;
+    border: none; /*borde del boton , escogimos ninguno*/
+}
+
+.boton-formulario:hover{
+    color:  #FF5733 ;
+    text-decoration: underline;
+
+}
+
+.tabla{
+    width: 60%;
+    background-color:  #d6eaf8 ;
+    border: none;
+}
+th{
+    background-color: azure;
+}
+td,th{
+    border: none;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color:white ;
+}   
+
+.caja1footer{
+    width: 33%;
+    height: 300px;
+    background-color: burlywood;
+    float: left;
+    text-align: center;
+}
+.caja2footer{
+    width: 33%;
+    height: 300px;
+    background-color: rgb(222, 218, 135);
+    float: left;
+}
+.caja3footer{
+    width: 33%;
+    height: 300px;
+    background-color: rgb(222, 167, 135);
+    float: left;
+}
+/* Esto se hace para ajustar la pagina a un celular de maximo 640px */
+@media screen and (max-width:640px){
+    #caja-logo{
+        width: 100%;
+        background-color:white;
+    }
+    #caja-logo img{        
+        left: 50%;
+        transform:translate(-50%,-50%);
+        -webkit-transform:translate(-50%,-50%);
+    }    
+    #caja-titulo {
+        width: 100%;
+        height: 120px;
+        /*background-color:crimson;*/
+        text-align:center;
+    }
+    #caja-menu{
+        width: 100%;
+        height: 200px; /*se modifica la altura en el triple de la altura de cada boton que era de 50px y un poco mas para darle espacio entre ellos */
+        float: left;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    ul li{
+        display:inline-block;
+        width: 80%;
+        height: 25px;
+        padding-top: 10px; /*asi le doy distancia al titulo dentro del boton desde el topa hacia abajo*/
+        margin-left: -40px;
+        margin-bottom: 10px;
+        background-color:rgb(226, 43, 43)        
+    }
+    form{
+        width: 100%;
+        background-color:white;
+        text-align: left;
+    }
+    .imput-form{
+        width: 90%;
+    }
+    .label1{
+        width: 70%;
+    }
+    .boton-formulario{
+        width: 80%;        
+        margin-bottom: 10px;
+        margin-left: 10%;
+        margin-right: 10%;        
+    }
+    .boton-formulario:hover{
+        color:  #FF5733 ;
+        text-decoration:line-through;    
+    }
+    .tabla{
+        width: 100%;
+        font-size: 12px; /*tamaño de la letra del interior de la tabla osea matematicas,español,etc*/
+        text-align: center;/*asi se alinea el texto*/
+    }
+    th{
+        background-color:rgb(255, 0, 111);
+        font-size: 16px;/*tamaño de la letra de los titulos osea lunes,martes,etc*/
+    }
+    
+
+    
+    
+
+
+
+
+
+
+}

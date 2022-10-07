@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Bootstrap</title>
+
+    <!--importemos de la pagina de bootstrap el sigte link para poder traer los elementos que necesitemos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!--como creamos una hoja de estilos debemos asociarla al proyecto en html de la sigte manera-->
+    <link href="css/estilo-bootstrap.css" rel="stylesheet"/>
+
+    <!--se debe traer para que me cargue los estilos de letra-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"/>
+
+
+
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <p class="text-primary">parrafo 1 azul</p> <!--esto se trajo de la pagina de bootstrap-->
+
+    <div class="container">
+        <div class="row"> <!--esto se pone cuando voy a pintar varias cajas dentro de un container-->
+            <div class="caja1 col-12 col-md-6">
+                <a href="https://www.bibliotecapiloto.gov.co/">
+                    <img src="imagen/logo_2.png" alt="Logo de la imagen de la biblioteca"/>
+                </a>
+
+            </div>
+            <div class="caja2 col-12 col-md-6">
+                <h1>Biblioteca G23</h1>
+
+            </div>
+            <div class="caja3 col-12 col-md-12">
+                <nav class="navbar navbar-dark bg-primary"><!--nos trajimos el navegador del ejercicio2-->
+                
+                    <ul><!--esto es una lista donde los items estan representados con puntos-->
+                        <li><a href="https://www.bibliotecapiloto.gov.co/" target="_blank">Biblioteca</a></li><!--con a creamos un hipervinculo,con target _blank hacemos que se abra en otra pagina a parte -->
+                        <li><a id="menu2" href="ejercicio1.html" target="_self">Ejercicio 1</a></li><!--me lleva al archivo que cree con nombre ejercicio1,con target _self hacemos que se abra sobre la misma pagina -->
+                        <li><a href="mailto:moncadaosorio@yahoo.es" target="self">Correo</a></li>
+                    </ul>
+                                                                                                                          
+                </nav>
+
+            </div>
+
+        </div>
+
+
+
+        
+
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+body{
+    font-family: 'Montserrat', sans-serif;/*asi me pone este estilo de letra a todo el body */
+
+}
+
+
+#caja-principal{
+    width: 100%;
+    height: 230px;
+    background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+}           
+
+.caja-publicidad1{
+    width: 32%;
+    height: 230px;
+    background-color:white;
+    float: left; /*con este comando puedo crear cajas seguidas una a la izquierda de la otra */
+    margin-right: 10px;/*asi le doy el margen que hay entre la caja-publicidad1 y la caja-2 */
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.caja-publicidad2{
+    width: 32%;
+    height: 230px;
+    background-color:white;
+    float: left; /*con este comando puedo crear cajas seguidas una a la izquierda de la otra */
+    margin-right: 10px;/*asi le doy el margen que hay entre la caja-publicidad2 y la caja-3 */
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.caja-publicidad3{
+    width: 32%;
+    height: 230px;
+    background-color:white;
+    float: left; /*con este comando puedo crear cajas seguidas una a la izquierda de la otra */
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.caja-superior{
+    width: 100%;
+    height: 60px;
+    background-color: blueviolet;
+    float: left;
+}
+.caja-superior1{
+    width: 77%;
+    height: 60px;
+    background-color: white;
+    float: left;
+    padding-left: 3%;/*con esto se corrio el texto un 3% a la derecha por lo tanto toca disminuir en ese porcentaje la caja superior 1 o 2 */
+    position: relative;/*con esto puedo mover puedo mover el texto dentro de la caja */
+}
+.caja-superior1 h3{/*con esto puedo mover puedo mover el texto dentro de la caja */
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+
+}
+.caja-superior2{
+    width: 20%;
+    height: 60px;
+    background-color: white;
+    float: left;
+    position: relative;/*con este comando se centra el icono que se inserto en la caja 2 */
+    color:blueviolet;
+    
+}
+.caja-superior span{ /*con este comando se centra el icono que se inserto en la caja 2 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.caja-media{
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    float: left;   
+    text-align: center; /*con este comando se alinea el texto de las cajas 1  y 2 */
+}
+.caja-media1{
+    width: 50%;
+    height: 130px;
+    background-color:white;
+    float: left;
+
+}
+.caja-media2{
+    width: 50%;
+    height: 130px;
+    background-color:white;
+    float: left;
+
+}
+.caja-inferior{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    float: left;
+    position: relative;/*con este comando se centra el boton */
+}
+
+.boton-inferior{
+    width: 30%;
+    height: 30px;
+    background-color:coral;
+    color:white;
+    border: none;
+}
+.caja-inferior .boton-inferior{ /*con este comando se centra el boton */
+    position: absolute;
+    left: 85%;
+    top: 63%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+@media screen and (max-width:640px){
+    #caja-principal{
+        width: 100%;
+        height: 720px;
+    }
+    .caja-publicidad1,.caja-publicidad2,.caja-publicidad3{
+        width: 100%;
+        margin-bottom:10px;
+        text-align: justify;
+    }
+    .boton-inferior{
+        background-color:tomato;
+    }
+
+
+
+
+
+
+}

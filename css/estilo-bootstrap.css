@@ -1,0 +1,44 @@
+.text-primary{
+    color: blueviolet !important;
+}
+/*.container-lg{
+    background-color:aquamarine;
+    height: 200px;    
+}*/
+.caja1{
+    background-color: cadetblue;
+    height: 150px;
+    position: relative;/*asi se puede centrar el logo mas .caja1 img con su contenido */
+}
+.caja1 img{ /*asi se puede centrar el logo */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+.caja2{
+    background-color:cornflowerblue;
+    height: 150px;
+    font-family: 'Montserrat', sans-serif;/*asi me pone este estilo de letra */
+    position: relative; /*asi se puede centrar el texto mas .caja2 img con su contenido */
+}
+.caja2 h1{ /*asi se puede centrar el texto */
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+.caja3{
+    background-color:bisque;
+    height: 60px;
+}
+/*pongamos en forma horizontal el menu*/
+ul li{
+    display:inline-block;
+    width: 200px;
+    }
+ul li a{
+    color:white;
+}
