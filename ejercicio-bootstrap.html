@@ -19,10 +19,10 @@
 
 </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <p class="text-primary">parrafo 1 azul</p> <!--esto se trajo de la pagina de bootstrap-->
+    <!--<h1>Hola Mundo</h1>
+    <p class="text-primary">parrafo 1 azul</p>  <--esto se trajo de la pagina de bootstrap-->
 
-    <div class="container">
+    <header class="container">
         <div class="row"> <!--esto se pone cuando voy a pintar varias cajas dentro de un container-->
             <div class="caja1 col-12 col-md-6">
                 <a href="https://www.bibliotecapiloto.gov.co/">
@@ -47,13 +47,130 @@
 
             </div>
 
-        </div>
+        </div>      
 
+    </header>
+    <br /><br />
 
+    <main class="container">
+        <div class="row">
+            <br /><br />
+        
+            
+                <!--creemos el formulario-->
+                <div class="formulario1 col-0 col-md-2"></div> <!--col-0 es para celular , col-md para medianas areas como tablets ,asi centramos el titulo-->    
+                <form class="col-12 col-md-6">
+                    <h1 style="text-align: center;">Titulo Formulario</h1>
+                    <br /><br />            
+                    <label class="form-label" for="nombres">Nombres y Apellidos</label>
+                    <input class="form-control" type="text" placeholder="ingrese nombres" id="nombres" minlength="5"  required> <!--debemos darle un id al campo,required quiere decir que es obligatorio ingresar un valor -->      
+                    <br /><br />
 
+                    <label class="form-label" for="año">Año</label>
+                    <input class="form-control" type="number" placeholder="ingresar año" id="año" required="true"
+                    min="1900" max="2022">
+                    <br /><br />
+
+                    <label class="form-label" for="fecha">Fecha</label><!--for es para que al tocar el label nos lleve al input-->
+                    <input class="form-control" type="date"  id="fecha"  required="true">
+                    <br /><br />
+
+                    <label class="form-label" for="clave">Clave</label>
+                    <input class="form-control" type="password"  id="clave">
+                    <br /><br />
+
+                    <label class="form-label" for="tipo_documento">Tipo de Documento</label>                    
+                    <select class="form-select" id="tipo_documento">
+                        <option value="CC" selected>Cedula de Ciudadania</option><!--al escribirle selected me selecciona automaticamente la cedula -->
+                        <option value="TI">Tarjeta de Identidad</option>
+                        <option value="CE">Cedula de Extranjeria</option>
+                    </select>                
+
+                    <br /><br /> 
+                    <label class="form-label" for="observaciones">Observaciones</label>
+                    <textarea class="form-control" id="observaciones" autocomplete="on" cols="30" rows="10" minlength="10">ingrese observaciones</textarea>
+
+                    <br /><br />
+
+                    <label>Genero</label>
+                    <!--Me copie de bootstrap todo el codigo completo para los botones, solo cambiamos el name y el id por genero, el checked sirve para que señale automaticamente la opcion que yo quiera-->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="genero" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Masculino
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="genero">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Femenino
+                        </label>
+                      </div>
+                    
+
+                    <br /><br />
+                    <label>Materias</label>
+                    <!--Me copie de bootstrap todo el codigo completo para los botones-->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Matematicas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Fisica
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Español
+                        </label>
+                    </div>
+
+                    <br /><br /> 
+                    <!--Me copie de bootstrap solo "btn btn-outline-primary" en la clase que es el estilo de los botones-->  
+                    <!--para asignarle un estilo a los botones para modificarles el tamaño le agrego "botones-formulario" que fue el nombre que le di al estilo-->        
+                    <input class="botones-formulario btn btn-outline-primary" type="submit" id="boton"  value="Guardar"><!--Crea un boton-->
+                    <input class="botones-formulario btn btn-outline-primary" type="submit" id="boton"  value="Cancelar">
+
+                </form>
+
+             
+        </div>                             
+            
+    </main>
+    <br /><br /><br /><br />
+
+    <h1 style="text-align: center;">Ejemplo Tabla</h1>
+
+    <!--para traerme el estilo de la tabla de bootstrap le pongo "class="table" -->
+    <!--para ponerle un color de la tabla de bootstrap le pongo a los tr "class="table-primary"-->
+    <!--para ponerle un efecto de la tabla de bootstrap le pongo a class "class="table-striped table-hover"-->
+    <Table class="table table-striped table-hover">
+        <tr class="table-primary">
+            <th></th>
+            <th>lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+
+        <tr class="table-danger">
+            <td>8-10</td>
+            <td>Fisica</td>
+            <td>Matematicas</td>
+            <td>Español</td>
+            <td>Sociales</td>
+            <td>Quimica</td>
+        </tr>
         
 
-    </div>
+    </Table>
+    <br /><br /><br /><br /><br /><br /><br /><br />
     
 
 </body>

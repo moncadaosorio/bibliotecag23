@@ -6,7 +6,7 @@
     height: 200px;    
 }*/
 .caja1{
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
     height: 150px;
     position: relative;/*asi se puede centrar el logo mas .caja1 img con su contenido */
 }
@@ -18,7 +18,7 @@
     -webkit-transform:translate(-50%,-50%);
 }
 .caja2{
-    background-color:cornflowerblue;
+    /*background-color:cornflowerblue;*/
     height: 150px;
     font-family: 'Montserrat', sans-serif;/*asi me pone este estilo de letra */
     position: relative; /*asi se puede centrar el texto mas .caja2 img con su contenido */
@@ -31,14 +31,45 @@
     -webkit-transform:translate(-50%,-50%);
 }
 .caja3{
-    background-color:bisque;
+    /*background-color:bisque;*/
     height: 60px;
 }
 /*pongamos en forma horizontal el menu*/
-ul li{
+
+ul li{         /*recordemos que este es el boton del menu */
     display:inline-block;
     width: 200px;
     }
-ul li a{
+
+ul li a{       /*recordemos que este es el texto del boton del menu */
     color:white;
 }
+.botones-formulario{
+    width: 49%;
+}
+
+
+@media screen and (max-width:640px){
+    .caja2{
+        height: 100px;
+    }
+    .caja2 h1{ /*asi estamos centrando el texto para tamaño de celulares */
+        left: 50%;
+        top: 20%;
+    }
+    .caja3{
+        height: 130px;
+    }
+    ul li{ 
+        margin-bottom: 10px;
+        text-align: center  ;        
+      
+    }
+
+    
+
+
+}
+
+
+
